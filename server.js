@@ -1,12 +1,21 @@
 const express = require("express");
+
+const mongodb = require("./data/database");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Xavier Mhaka");
-});
+app.use("/", require("./routes"));
 
 const port = 3000;
 
-app.listen(process.env.PORT || port, () => {
-  console.log("Web Server is listening at port " + (process.env.PORT || 3000));
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(process.env.PORT || port, () => {
+      console.log(
+        "Database is listening and node Running on port " +
+          (process.env.PORT || 3000)
+      );
+    });
+  }
 });
