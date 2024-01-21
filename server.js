@@ -1,11 +1,16 @@
 const express = require("express");
-
+const bodyParser = require("body-parser");
 const mongodb = require("./data/database");
 const app = express();
 
-app.use("/", require("./routes"));
-
 const port = 3000;
+
+app.use(bodyParser.json());
+app.use((req, res, next) => {
+  res.setHeader("Access-control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+  next();
+});
+app.use("/", require("./routes"));
 
 mongodb.initDb((err) => {
   if (err) {

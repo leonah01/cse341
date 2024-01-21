@@ -1,0 +1,35 @@
+// LOCAL HOST //
+### GET all userss 
+Get http://localhost:3000/users
+
+### Get Contacts by id 
+Get http://localhost:3000/users/65a3466dccdca776cce0c785
+
+### Create Contact 
+Post http://localhost:3000/users HTTP/1.1 
+content-Type: application/json
+
+{
+   "firstName": "Farai",
+    "LastName": "Tamuka",
+    "email": "faraitamuka@gmail.com",
+    "favoriteColor": "silver",
+    "birthday": "8 March"
+}
+ 
+### Put users
+Put http://localhost:3000/users/65ad17ed0ab61d763923c69e HTTP/1.1 
+content-Type: application/json
+
+{
+  /*"_id": "65a3466dccdca776cce0c785",*/
+  "firstName": "Fidelis",
+  "LastName": "Dongo",
+  "email": "dongofidel@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "2 March"
+}
+
+### Delete users 
+DELETE http://localhost:3000/users/65ad17ed0ab61d763923c69e HTTP/1.1 
+  
