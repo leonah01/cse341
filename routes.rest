@@ -1,35 +1,36 @@
 // LOCAL HOST //
-### GET all userss 
-Get http://localhost:3000/users
+### GET all Sales 
+Get http://localhost:3000/sales
 
-### Get Contacts by id 
-Get http://localhost:3000/users/65a3466dccdca776cce0c785
+### Get Sales by id 
+Get http://localhost:3000/sales/65b8fa4477f4551f5df6613c
 
-### Create Contact 
-Post http://localhost:3000/users HTTP/1.1 
+### Create Sales 
+Post http://localhost:3000/sales HTTP/1.1 
 content-Type: application/json
 
 {
-   "firstName": "Farai",
-    "LastName": "Tamuka",
-    "email": "faraitamuka@gmail.com",
-    "favoriteColor": "silver",
-    "birthday": "8 March"
+   "carType": "Mazda",
+    "location": "Gweru",
+    "price": "$6 500",
+    "color": "green",
+    "condition": "new",
+    "ownerGender": "female"
 }
  
-### Put users
-Put http://localhost:3000/users/65ad17ed0ab61d763923c69e HTTP/1.1 
+### Put sales
+Put http://localhost:3000/sales/65b94921f4f51374a46be3bc HTTP/1.1 
 content-Type: application/json
 
 {
-  /*"_id": "65a3466dccdca776cce0c785",*/
-  "firstName": "Fidelis",
-  "LastName": "Dongo",
-  "email": "dongofidel@gmail.com",
-  "favoriteColor": "green",
-  "birthday": "2 March"
+   "carType": "Mazda",
+    "location": "Gweru",
+    "price": "$6 500",
+    "color": "green",
+    "condition": "new",
+    "ownerGender": "female"
 }
 
-### Delete users 
-DELETE http://localhost:3000/users/65ad17ed0ab61d763923c69e HTTP/1.1 
+### Delete sales 
+DELETE http://localhost:3000/sales/65b94921f4f51374a46be3bc HTTP/1.1 
   

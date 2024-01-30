@@ -5,14 +5,16 @@
     "description": "Contacts API",
     "version": "1.0.0"
   },
-  "host": "cse341-winter-p19d.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http",
+    "http"
   ],
   "paths": {
     "/": {
       "get": {
+        "tags": [],
         "description": "",
         "responses": {
           "200": {
@@ -21,7 +23,17 @@
         }
       }
     },
-    "/users/": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/sales/": {
       "get": {
         "description": "",
         "produces": [
@@ -43,19 +55,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "carType": {
                   "example": "any"
                 },
-                "lastName": {
+                "location": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "color": {
                   "example": "any"
                 },
-                "birthday": {
+                "condition": {
+                  "example": "any"
+                },
+                "ownerGender": {
                   "example": "any"
                 }
               }
@@ -72,7 +87,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/sales/{id}": {
       "get": {
         "description": "",
         "produces": [
