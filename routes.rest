@@ -19,7 +19,7 @@ content-Type: application/json
 }
  
 ### Put sales
-Put http://localhost:3000/sales/65b94921f4f51374a46be3bc HTTP/1.1 
+Put http://localhost:3000/sales/65c1233b3edef7a7cba83be6 HTTP/1.1 
 content-Type: application/json
 
 {
@@ -32,7 +32,7 @@ content-Type: application/json
 }
 
 ### Delete sales 
-DELETE http://localhost:3000/sales/65c0b46ffc969b05a757f158 HTTP/1.1 
+DELETE http://localhost:3000/sales/65c1233b3edef7a7cba83be6 HTTP/1.1 
   
 //PART TWO
 // LOCAL HOST //
@@ -40,14 +40,13 @@ DELETE http://localhost:3000/sales/65c0b46ffc969b05a757f158 HTTP/1.1
 Get http://localhost:3000/clients
 
 ### Get Clients by id 
-Get http://localhost:3000/clients/65b8fa4477f4551f5df6613c
-
+Get http://localhost:3000/clients/65c06fc48a3bebdc8efa628c
 ### Create Clients 
 Post http://localhost:3000/clients HTTP/1.1 
 content-Type: application/json
 
 {
-   "customer": "Xavier Mhaka",
+   "customer": "Sam James",
     "sport": "soccer",
     "favoriteColor": "green",
     "purpose": "buy",
@@ -72,4 +71,4 @@ content-Type: application/json
 }
 
 ### Delete Clients 
-DELETE http://localhost:3000/clients/65c0bceb4eeb1c3769b57405 HTTP/1.1 
+DELETE http://localhost:3000/clients/65c123993edef7a7cba83be7 HTTP/1.1 
