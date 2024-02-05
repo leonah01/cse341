@@ -32,5 +32,44 @@ content-Type: application/json
 }
 
 ### Delete sales 
-DELETE http://localhost:3000/sales/65b94921f4f51374a46be3bc HTTP/1.1 
+DELETE http://localhost:3000/sales/65c0b46ffc969b05a757f158 HTTP/1.1 
   
+//PART TWO
+// LOCAL HOST //
+### GET all Clients 
+Get http://localhost:3000/clients
+
+### Get Clients by id 
+Get http://localhost:3000/clients/65b8fa4477f4551f5df6613c
+
+### Create Clients 
+Post http://localhost:3000/clients HTTP/1.1 
+content-Type: application/json
+
+{
+   "customer": "Xavier Mhaka",
+    "sport": "soccer",
+    "favoriteColor": "green",
+    "purpose": "buy",
+    "amount": "$200",
+    "cases": "3",
+    "date": "31 january 2021",
+    "time": "1100hrs"
+}
+
+### Put Clients
+Put http://localhost:3000/clients/65b94921f4f51374a46be3bc HTTP/1.1 
+content-Type: application/json
+
+{"customer": "Xavier Mhaka",
+    "sport": "soccer",
+    "favoriteColor": "green",
+    "purpose": "buy",
+    "amount": "$200",
+    "cases": "3",
+    "date": "31 january 2021",
+    "time": "1100hrs"
+}
+
+### Delete Clients 
+DELETE http://localhost:3000/clients/65c0bceb4eeb1c3769b57405 HTTP/1.1 
