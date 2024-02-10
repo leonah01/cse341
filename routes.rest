@@ -32,7 +32,7 @@ content-Type: application/json
 }
 
 ### Delete sales 
-DELETE http://localhost:3000/sales/65c139aff045b3736e68eb00 HTTP/1.1 
+DELETE http://localhost:3000/sales/65c13ffed799f9aff97235e5 HTTP/1.1 
   
 //PART TWO
 // LOCAL HOST //
@@ -71,4 +71,4 @@ content-Type: application/json
 }
 
 ### Delete Clients 
-DELETE http://localhost:3000/clients/65c13a12f045b3736e68eb01 HTTP/1.1 
+DELETE http://localhost:3000/clients/65c14045d799f9aff97235e6 HTTP/1.1 
